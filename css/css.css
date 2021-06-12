@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;800&display=swap');
+
+body{
+  margin: 0;
+}
+
+a:hover{
+  color: rgb(189, 55, 0);
+}
+
+header,
+.seccion2a,
+.autores,
+.videosContainer,
+.misiones{
+  margin-right: 10%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+}
+
+.description{
+  margin-left: 10%;
+}
+
+/* Header */
+
+header > a{
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  margin-right: 5%;
+}
+
+.header_select{
+  text-decoration: none;
+  border-bottom: 1px;
+  border-bottom-style:  solid;
+}
+
+/* Footer */
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+footer > a,
+footer > * > a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.email {
+  margin-bottom: 10px;
+}
+
+.email > input{
+  width: 100%;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  text-align: center;
+  background-color: black;
+  border-color: grey;
+  color: grey;
+}
+
+.input__button,
+.avisos{
+  text-align: center;
+}
+
+.input__button > input:hover{
+  background-color: rgb(189, 55, 0);
+  color: rgb(255, 255, 255);
+}
+
+.avisos{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.avisos >a {
+  margin-right: 10px;
+}
+
+/* CUERPO INDEX.HTML */
+
+/* Sección 1a */
+.seccion1a{
+  font-family: 'Alegreya', serif;
+ 
+  background-color: black;
+
+  background-image: url('../img/bg-hero-mars.jpg');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 500px auto;
+
+  color: rgb(255, 255, 255);
+  min-height: 500px;
+}
+
+
+.description > h1{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 100px;
+}
+
+.description > p {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 45px;
+}
+
+/* Sección 2a */
+
+.seccion2a > h1{
+  font-family: 'Alegreya', serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 45px;
+}
+
+.seccion2a > p {
+  font-family: 'Alegreya', serif;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.containerCards{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+}
+
+.card{
+  width: 400px;
+  height: 700px;
+}
+
+.card:nth-child(odd) {
+  background-color: rgba(0,0,0,0.1);
+}
+
+.card > .content{
+  margin-left: 5%;
+  margin-right: 5%;
+  
+}
+
+.card > .content > h2{
+  font-family: 'Alegreya', serif;
+  font-weight: 800;
+  font-style: normal;
+  color: rgb(189, 55, 0);
+  font-size: 30px;
+}
+
+.card > .content > p {
+  font-family: 'Alegreya', serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.card > img{
+  width: 400px;
+  height: auto;
+}
+
+
+/* mars-2020.html */
+.desglose{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 20%;
+  font-family: 'Alegreya', serif;
+}
+.desglose > h2 {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.desglose > a {
+  color: rgb(189, 55, 0);
+  text-decoration: none;
+}
+
+.desglose > a:last-child {
+  color: black;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.misiones{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap-reverse;
+  font-family: 'Alegreya', serif;
+}
+
+.ampliacion{
+  width:80%;
+  text-align: justify;
+}
+
+.ampliacion>h2,
+.nombre > h2{
+  font-family: 'Alegreya', serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.ampliacion>h2:first{
+  margin-top: 0;
+}
+
+.video{
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top:  54.25%;
+
+}
+
+.video > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ampliacion > figcaption{
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+/* ciencia-ficcion.html */
+
+.autor{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  gap: 1.5em;
+  margin-bottom: 1.5em;
+  font-family: 'Alegreya', serif;
+
+}
+
+.imgContainer  img{
+  width: 100%;
+  height: auto;
+}
+
+.citar,
+.nombre,
+.imgContainer{
+  background-color: rgba(0,0,0,0.1);
+}
+
+.imgContainer,
+.nombre{
+  width: 25%;
+}
+
+.citar{
+  width: 70%;
+}
+
+.nombre > h2 {
+  margin-left: 5%;
+}
+.margin5{
+  margin: 5%;
+}
+
+.margin5 > cite{
+  font-size: 18px;
+}
+
+.margin5 > p{
+  font-weight: 800;
+  font-size: 25px;
+}
+
+
+/* marte-en-el-cine.html */
+.videosContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:2em;
+  justify-content: center;
+  font-family: 'Alegreya', serif;
+}
+
+.film{
+  width: 48%;
+  text-align: center;
+}
+
+.film figcaption{
+  background-color: rgba(0,0,0,0.1);
+  padding: 2%;
+  padding-bottom: 5%;
+  font-size: 20px;
+}
+
+
+@media only screen and (max-width: 720px) {
+  .seccion1a{
+    background-size: 300px auto;
+    min-height: 300px;
+  }
+
+  
+  .description > h1{
+    font-size: 60px;
+  }
+
+  .description > p{
+    font-size: 25px;
+  }
+
+  .card:nth-child(odd) {
+    background-color: white;
+  }
+
+  .ampliacion,
+  .desglose{
+    width: 100%;
+  }
+  
+  .misiones,
+  .autores,
+  .videosContainer{
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  .autor{
+    flex-wrap: wrap;
+    gap: 0em;
+  }
+
+  .imgContainer,
+  .nombre,
+  .citar,
+  .film{
+    width: 100%;
+  }
+
+  .imgContainer{
+    text-align: center;
+  }
+
+  .imgContainer  img{
+    width: 350px;
+  }
+
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+} 
