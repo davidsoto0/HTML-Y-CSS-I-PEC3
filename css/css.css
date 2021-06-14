@@ -41,6 +41,7 @@ header > a{
 
 /* Footer */
 footer{
+  font-family: 'Open Sans', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,7 +158,6 @@ footer > * > a{
 .card > .content{
   margin-left: 5%;
   margin-right: 5%;
-  
 }
 
 .card > .content > h2{
@@ -219,7 +219,7 @@ footer > * > a{
   text-align: justify;
 }
 
-.ampliacion>h2,
+.ampliacion > h2,
 .nombre > h2{
   font-family: 'Alegreya', serif;
   font-weight: 800;
@@ -290,7 +290,9 @@ footer > * > a{
 
 .nombre > h2 {
   margin-left: 5%;
+  margin-right: 5%;
 }
+
 .margin5{
   margin: 5%;
 }
@@ -327,14 +329,24 @@ footer > * > a{
   font-size: 20px;
 }
 
+/* Tablets */
+@media only screen and (max-width: 1200px) {
+  .nombre > h2{
+    font-size: 30px;
+  }
 
+  .card:nth-child(odd) {
+    background-color: white;
+  }
+}
+
+/* Moviles */
 @media only screen and (max-width: 720px) {
   .seccion1a{
     background-size: 300px auto;
     min-height: 300px;
   }
 
-  
   .description > h1{
     font-size: 60px;
   }
@@ -343,10 +355,10 @@ footer > * > a{
     font-size: 25px;
   }
 
-  .card:nth-child(odd) {
-    background-color: white;
-  }
-
+  .imgContainer,
+  .nombre,
+  .citar,
+  .film,
   .ampliacion,
   .desglose{
     width: 100%;
@@ -361,13 +373,6 @@ footer > * > a{
   .autor{
     flex-wrap: wrap;
     gap: 0em;
-  }
-
-  .imgContainer,
-  .nombre,
-  .citar,
-  .film{
-    width: 100%;
   }
 
   .imgContainer{
@@ -385,5 +390,14 @@ footer > * > a{
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
+  }
+
+  .card > img{
+    width: 370px;
+    height: auto;
+  }
+  
+  .nombre > h2{
+    font-size: 40px;
   }
 } 
